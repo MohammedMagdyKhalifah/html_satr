@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة HTML</title>
+    <style>
+        table, th, td {
+            border:  1px solid black 
+        }
+    </style>
+</head>
+<body dir="rtl"> <!--Direction right to left-->
+    <h1>دورة HTML</h1>
+    <img src="html.png" width="300" alt="HTML logo"><!--في حال عدم ظهور الصورة يظهر شرحها-->
+    <h2>وصف الدورة</h2>
+    <p>هي لغة توصيف تستخدم في إنشاء وتصميم صفحات ومواقع الويب، وتعتبر هذه اللّغة من أقدم اللّغات وأوسعها استخداما في تصميم صفحات الويب. <b>HTML</b> هيكل صفحة الويب وتعطي متصفّح الإنترنت وصفا لكيفيّة عرضه لمحتوياتها، يمكن أن تساعده تقنيات مثل أوراق الأنماط المتتالية (<i>CSS</i>) ولغات البرمجة النصية مثل جافا سكريبت تستقبل متصفحات الويب مستندات HTML من خادم الويب أو من نظام الملفات وتعرضها، ووظيفة لغة HTML هي وصف بنية صفحات الويب هيكليًا.</p>
+    <p><b>مواعيد الحضور يوميا:</b>
+        <br>
+    من الساعة ٨:٠٠ <sub>ص</sub> حتى الساعة ١١:٠٠ 
+        <sub>ص</sub></p>
+    <p><b>المستويات لهذه الدورة:</b>
+        <br>
+        1<sup>st</sup>level: اساسيات HTML <br>
+        2<sup>nd</sup>level: مفاهيم متقدمة في HTML
+    </p><hr>
+    <h2>أهداف هذه الدورة</h2>
+    <ol type="A"><!--order list-->
+        <!--list item-->
+        <li>التعرف على مفهوم HTML</li> 
+        <li>تعلم كل tag والغرض من استخدامه</li>
+        <li>طرق اضافة النصوص والفيديوهات وغيرها من المحتويات المعتادة في صفحات الويب</li>
+    </ol>
+    <h2>متطلبات هذه الدورة</h2>
+    <ul type="circle"><!--unordered list-->
+        <!--List item-->
+        <li>متصفح (سفاري/ جوجل كروم)</li>
+        <li>محرر نصوص</li>
+    </ul>
+    <p><!--Anchor-->
+        للمراجع اضغط <a href="https://www.apple.com">هنا</a> 
+    </p>
+    <video width="500" controls>
+        <source src="song.mp4" type="video/mp4">
+        عذرا لا يمكن تشغيل هذا الفيديو
+    </video>
+    <audio controls>
+        <source src="Way Down We Go.mp3" type="audio/mp3">
+        Couldn't present the audio in this browser.
+    </audio>
+    <br>
+    <table>
+        <!--وصف الجدول-->
+        <caption>جدو أماكن المحاضرات </caption>
+        <!--رأس الجدول-->
+        <thead>
+            <!--tr table row-->
+            <tr>
+                <!--th رأس الجدول-->
+                <th>اليوم</th>
+                <th>المكان</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--td البيانات-->
+                <td>الأحد والإثنين</td>
+                <td>Class A</td>
+            </tr>
+            <tr>
+                <td>الثلاثاء والأربعاء</td>
+                <td>Class B</td>
+            </tr>
+            <tr>
+                <!--colspan العمود بمقام كام أو حجمه بكام عمود-->
+                <td colspan="2">الخميس عن بعد</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <hr>
+    <h2>نموذج الإنضمام للدورة</h2>
+    <form>
+        <label for="name">اسم المستخدم</label>
+        <input type="text" id="name"> 
+        <!--name لازم يكونوا نفس الإسم عشان يربطهم ببعض-->
+        <p>الجنس:</p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">ذكر</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">انثى</label>
+
+        <p>من أين سمعت عن HTML؟</p>
+        <input type="checkbox" id="friend" name="friend">
+        <label for="frined">صديق</label><br>
+        <input type="checkbox" id="books" name="books">
+        <label for="books">الكتب</label><br>
+        <input type="checkbox" id="social media" name="social media">
+        <label for="social media">مواقع التواصل الاجتماعي</label><br>
+
+        <label for="city">اختر مدينتك</label>
+        <!--drop list-->
+        <select id="city" name="city">
+            <option value="Riyadh">الرياض</option>
+            <option value="Jeddah ">جدة</option> 
+            <option value="Madiah">المدينة المنورة</option>
+        </select><br><br>
+
+        <input type="submit" value="إنضمام">
+    </form> 
+     
+
+</body>
+</html>
